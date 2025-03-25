@@ -85,7 +85,7 @@ export default function Template1({ profile, file, aboutMe, experience, educatio
                     <Stack className="p-3">
                         <h4 className="title">Skills</h4>
                         <div className="d-flex flex-wrap">
-                            {
+                            {   
                                 skills.map((items, id) => {
                                     return (
                                         <p className="technology rounded" key={id}>{items}</p>

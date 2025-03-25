@@ -5,7 +5,10 @@ import jsPDF from 'jspdf';
 import html2canvas from "html2canvas";
 import Template1 from '../../templates/1';
 import Template2 from '../../templates/2';
-
+import Template3 from '../../templates/3';
+import Template4 from '../../templates/4';
+import Template5 from '../../templates/5';
+import Template6 from '../../templates/6';
 import { useSelector } from 'react-redux';
 
 function PdfComponent() {
@@ -93,7 +96,10 @@ function PdfComponent() {
 
                 {templateId == "1" && <Template1 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
                 {templateId == "2" && <Template2 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
-
+                {templateId == "3" && <Template3 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
+                {templateId == "4" && <Template4 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
+                {templateId == "5" && <Template5 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
+                {templateId == "6" && <Template6 profile={profile} file={file} aboutMe={aboutMe} experience={experience} education={education} skills={skills} />}
                 {/* <div className="row pdf bg-light" id="divToPrint" size="A4">
 
                     <div className="d-flex align-items-center justify-content-center col-md-5 bg-1 p-0 py-2">
