@@ -1,10 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import { Typography, Button, Grid } from '@mui/material';
 import './home.css'; // Import the CSS file
+import { useState } from 'react';
+
+
 
 const Home = () => {
 
     const navigate = useNavigate();
+    const [isDarkMode, setIsDarkMode] = useState(false);
     //list of templates in array
     const resumeTemplates = [
         { id: 1, name: 'Template 1', description: 'Classic Resume Template', image: '/images/1.jpg' },

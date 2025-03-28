@@ -5,9 +5,11 @@ import aboutMeSlice from "./slices/AboutMeSlice";
 import skillSlice from "./slices/SkillSlice";
 import experienceSlice from "./slices/ExperienceSlice";
 import educationSlice from "./slices/EducationSlice";
+import loginSlice from "./slices/LoginSlice";
 
 const store = configureStore({
     reducer: {
+        login: loginSlice,
         profile: profileSlice,
         file: fileSlice,
         aboutMe: aboutMeSlice,

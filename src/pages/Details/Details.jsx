@@ -39,9 +39,9 @@ const Details = () => {
                     </NavLink>
                 </div>
 
-            </Container>
+            </Container> 
         </>
     );
-}
+};
 
 export default Details;

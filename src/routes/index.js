@@ -4,16 +4,22 @@ import About from "../pages/About/About";
 import ErrorBoundary from "../pages/Error/ErrorBoundary";
 import PdfComponent from "../pages/PdfComponent/PdfComponent";
 import NavbarComponent from "../components/Navbar";
+import Login from "../pages/Login/Login";
 
-//creating routing path
+// Creating routing path
 export const routes = [
     {
-        path: '/',
+        path: '/',  
         element: <NavbarComponent />,
-        errorElement: <ErrorBoundary />, //error routing
+        errorElement: <ErrorBoundary />, // Error routing
+
         children: [
             {
-                path: '/',
+                index: true,  // Makes Login the default route
+                element: <Login />
+            },
+            {
+                path: '/home',  // Use lowercase for consistency
                 element: <Home />
             },
             {
@@ -30,4 +36,4 @@ export const routes = [
             },
         ]
     }
-]
+];
